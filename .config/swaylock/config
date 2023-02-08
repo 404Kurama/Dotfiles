@@ -1,0 +1,11 @@
+image=$HOME/Pictures/windows-error.jpg
+
+ignore-empty-password
+
+clock
+indicator
+daemonize
+timestr="%I:%M %p"
+datestr="%b %d, %G"
+
+fade-in=0.5
