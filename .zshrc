@@ -1,5 +1,6 @@
 # Imports
 source ~/.zplug/init.zsh  
+source ~/.mocha-zsh-syntax-highlighting.zsh  
 
 # Alias
 alias dfm="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
