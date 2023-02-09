@@ -29,3 +29,5 @@ fi
 # Load
 zplug load
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+macchina
