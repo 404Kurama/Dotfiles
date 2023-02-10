@@ -8,4 +8,14 @@ function Utils.LoadModule(Path)
     end
 end
 
+function Utils.MapKeybind(Mode, Key, Thing, Opts)
+    local Options = { noremap = true }
+
+    if Opts then
+        Options = vim.tbl_extend("force", Options, Opts)
+    end
+
+    vim.keymap.set(Mode, Key, Thing, Options)
+end
+
 return Utils
