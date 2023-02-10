@@ -1,0 +1,32 @@
+separator_color = "#b4befe"
+key_color = "#b4befe"
+prefer_small_ascii = true
+
+[palette]
+type = "Dark"
+visible = true
+glyph = " "
+
+[bar]
+visible = true
+
+[box]
+title = " Information "
+border = "single"
+visible = true
+
+[custom_ascii]
+color = "#b4befe"
+path = "~/.config/macchina/themes/ascii.txt"
+
+[keys]
+host = " Host"
+kernel = " Kernel"
+distro = " Distro"
+packages = " Packages"
+terminal = " Terminal"
+shell = " Shell"
+uptime = " Uptime"
+cpu = " Cpu"
+cpu_load = " Cpu Load"
+memory = " Memory"

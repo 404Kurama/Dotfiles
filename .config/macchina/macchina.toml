@@ -1,0 +1,2 @@
+theme = "kurama"
+show = ["Host", "Kernel", "Distribution", "Packages", "Terminal", "Shell", "Uptime", "Processor", "ProcessorLoad", "Memory"]
