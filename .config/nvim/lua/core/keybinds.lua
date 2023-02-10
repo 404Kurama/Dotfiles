@@ -1,5 +1,5 @@
 --// Imports
-local Utils = require("core.utils")
+local Utils = require("core/utils")
 
 --// Core
 

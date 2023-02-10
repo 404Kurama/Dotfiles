@@ -2,7 +2,7 @@
 local Catppuccin = require("catppuccin")
 
 --// Variables
-local Colors = require("catppuccin.palettes").get_palette()
+local Colors = require("catppuccin/palettes").get_palette()
 
 --// Core
 vim.g.catppuccin_flavour = "mocha"

@@ -1,15 +1,17 @@
 --// Imports
-local Utils = require("core.utils")
+local Utils = require("core/utils")
 
 --// Core
 
 --/// Plugins
-Utils.LoadModule("core.plugins")
+Utils.LoadModule("core/plugins")
 
 --/// Editor Core
-Utils.LoadModule("core.options")
-Utils.LoadModule("core.autocmds")
-Utils.LoadModule("core.keybinds")
+Utils.LoadModule("core/options")
+Utils.LoadModule("core/autocmds")
+Utils.LoadModule("core/keybinds")
 
 --/// Theme
-Utils.LoadModule("plugins.configs.theme")
+Utils.LoadModule("plugins/configs/theme")
+
+--// Misc

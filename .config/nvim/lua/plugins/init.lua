@@ -24,7 +24,9 @@ Plugins["Plugins"] = {
         ["build"] = ":CatppuccinCompile",
         ["lazy"] = false,
         ["priority"] = 1000
-    }
+    },
+
+    --// Misc
 }
 
 return Plugins
