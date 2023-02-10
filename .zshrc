@@ -7,6 +7,7 @@ alias dfm="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias ls="exa --icons"
 alias la="exa -la --icons"
 alias tree="exa --tree --icons"
+alias vim="nvim"
 
 # Plugins
 zplug romkatv/powerlevel10k, as:theme, depth:1
@@ -22,7 +23,6 @@ if ! zplug check --verbose; then
 fi
 
 # Instant Prompt
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
