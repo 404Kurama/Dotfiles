@@ -62,7 +62,7 @@ Cmp.setup({
     ["mapping"] = {
         ["<S-TAB>"] = Cmp.mapping.select_prev_item(),
         ["<TAB>"] = Cmp.mapping.select_next_item(),
-        ["<ESC>"] = Cmp.mapping.close(),
+        ["<S-ESC>"] = Cmp.mapping.close(),
         ["<CR>"] = Cmp.mapping.confirm({
             ["behavior"] = Cmp.ConfirmBehavior.Insert,
             ["select"] = true
@@ -74,7 +74,6 @@ Cmp.setup({
         { ["name"] = "buffer" },
         { ["name"] = "nvim_lua" },
         { ["name"] = "path" },
-        { ["name"] = "neorg" },
         { ["name"] = "spell" }
     }
 })

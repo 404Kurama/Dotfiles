@@ -56,6 +56,17 @@ Plugins["Plugins"] = {
         "williamboman/mason.nvim"
     },
 
+    --// Navigation
+    {
+        "karb94/neoscroll.nvim"
+    },
+    {
+        "ggandor/leap.nvim"
+    },
+    {
+        "beauwilliams/focus.nvim"
+    },
+
     --// Misc
     {
         "nullishamy/autosave.nvim",

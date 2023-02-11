@@ -20,8 +20,13 @@ Utils.LoadModule("plugins/configs/diag/mason")
 Utils.LoadModule("plugins/configs/diag/cmp")
 Utils.LoadModule("plugins/configs/diag/lspsigns")
 Utils.LoadModule("plugins/configs/diag/lspdiags")
-Utils.LoadModule("Plugins/configs/diag/format")
+Utils.LoadModule("plugins/configs/diag/format")
 
 --// Misc
 Utils.LoadModule("plugins/configs/misc/autosave")
 Utils.LoadModule("plugins/configs/misc/treesitter")
+
+--// Navigation
+Utils.LoadModule("plugins/configs/nav/focus")
+Utils.LoadModule("plugins/configs/nav/scroll")
+Utils.LoadModule("plugins/configs/nav/leap")
