@@ -15,3 +15,4 @@ Utils.LoadModule("core/keybinds")
 Utils.LoadModule("plugins/configs/theme")
 
 --// Misc
+Utils.LoadModule("plugins/configs/misc/autosave")

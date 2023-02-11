@@ -27,6 +27,18 @@ Plugins["Plugins"] = {
     },
 
     --// Misc
+    {
+        "nullishamy/autosave.nvim",
+        ["branch"] = "dev"
+    },
+
+    --// Others
+    {
+        "MunifTanjim/nui.nvim"
+    },
+    {
+        "nvim-lua/plenary.nvim"
+    }
 }
 
 return Plugins
