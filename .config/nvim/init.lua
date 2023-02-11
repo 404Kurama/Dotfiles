@@ -20,6 +20,7 @@ Utils.LoadModule("plugins/configs/diag/mason")
 Utils.LoadModule("plugins/configs/diag/cmp")
 Utils.LoadModule("plugins/configs/diag/lspsigns")
 Utils.LoadModule("plugins/configs/diag/lspdiags")
+Utils.LoadModule("Plugins/configs/diag/format")
 
 --// Misc
 Utils.LoadModule("plugins/configs/misc/autosave")
