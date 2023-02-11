@@ -14,6 +14,11 @@ Utils.LoadModule("core/keybinds")
 --/// Theme
 Utils.LoadModule("plugins/configs/theme")
 
+--/// Diagnostisc
+Utils.LoadModule("plugins/configs/diag/lsp")
+Utils.LoadModule("plugins/configs/diag/mason")
+Utils.LoadModule("plugins/configs/diag/cmp")
+
 --// Misc
 Utils.LoadModule("plugins/configs/misc/autosave")
 Utils.LoadModule("plugins/configs/misc/treesitter")

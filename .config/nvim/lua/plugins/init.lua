@@ -26,6 +26,36 @@ Plugins["Plugins"] = {
         ["priority"] = 1000
     },
 
+    --// Diagnostics
+    {
+        "neovim/nvim-lspconfig"
+    },
+    {
+        "jose-elias-alvarez/null-ls.nvim"
+    },
+    {
+        "rubyowo/lspdiags.nvim"
+    },
+    {
+        "L3MON4D3/LuaSnip"
+    },
+    {
+        "hrsh7th/nvim-cmp",
+        ["event"] = "InsertEnter",
+        ["dependencies"] = {
+            "hrsh7th/cmp-nvim-lsp",
+            "hrsh7th/cmp-buffer",
+            "hrsh7th/cmp-path",
+            "saadparwaiz1/cmp_luasnip"
+        }
+    },
+    {
+        "mhartington/formatter.nvim"
+    },
+    {
+        "williamboman/mason.nvim"
+    },
+
     --// Misc
     {
         "nullishamy/autosave.nvim",
