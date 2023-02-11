@@ -16,3 +16,4 @@ Utils.LoadModule("plugins/configs/theme")
 
 --// Misc
 Utils.LoadModule("plugins/configs/misc/autosave")
+Utils.LoadModule("plugins/configs/misc/treesitter")

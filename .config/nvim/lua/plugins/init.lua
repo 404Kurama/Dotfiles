@@ -31,6 +31,16 @@ Plugins["Plugins"] = {
         "nullishamy/autosave.nvim",
         ["branch"] = "dev"
     },
+    {
+        "nvim-treesitter/nvim-treesitter",
+        ["build"] = ":TSUpdate",
+        ["dependencies"] = {
+            "nvim-treesitter/nvim-treesitter-textobjects",
+            "windwp/nvim-ts-autotag",
+            "windwp/nvim-autopairs",
+            "p00f/nvim-ts-rainbow"
+        }
+    },
 
     --// Others
     {
