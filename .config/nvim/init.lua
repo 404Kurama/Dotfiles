@@ -40,6 +40,7 @@ Utils.LoadModule("plugins/configs/ui/notify")
 Utils.LoadModule("plugins/configs/ui/tree")
 Utils.LoadModule("plugins/configs/ui/statusline")
 Utils.LoadModule("plugins/configs/ui/bufferline")
+Utils.LoadModule("plugins/configs/ui/dashboard")
 
 --// Text
 Utils.LoadModule("plugins/configs/text/autopairs")

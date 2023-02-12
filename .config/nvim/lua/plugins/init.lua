@@ -2,18 +2,18 @@ local Plugins = {}
 
 Plugins["opts"] = {
     ["ui"] = {
-        ["border"] = "rounded"
+        ["border"] = "rounded",
     },
     ["defaults"] = {
-        ["lazy"] = true
+        ["lazy"] = true,
     },
     ["install"] = {
         ["colorscheme"] = { "catppuccin" },
-        ["missing"] = true
+        ["missing"] = true,
     },
     ["git"] = {
-        ["url_format"] = "git@github.com:%s.git"
-    }
+        ["url_format"] = "git@github.com:%s.git",
+    },
 }
 
 Plugins["Plugins"] = {
@@ -23,21 +23,21 @@ Plugins["Plugins"] = {
         ["name"] = "catppuccin",
         ["build"] = ":CatppuccinCompile",
         ["lazy"] = false,
-        ["priority"] = 1000
+        ["priority"] = 1000,
     },
 
     --// Diagnostics
     {
-        "neovim/nvim-lspconfig"
+        "neovim/nvim-lspconfig",
     },
     {
-        "jose-elias-alvarez/null-ls.nvim"
+        "jose-elias-alvarez/null-ls.nvim",
     },
     {
-        "rubyowo/lspdiags.nvim"
+        "rubyowo/lspdiags.nvim",
     },
     {
-        "L3MON4D3/LuaSnip"
+        "L3MON4D3/LuaSnip",
     },
     {
         "hrsh7th/nvim-cmp",
@@ -46,70 +46,73 @@ Plugins["Plugins"] = {
             "hrsh7th/cmp-nvim-lsp",
             "hrsh7th/cmp-buffer",
             "hrsh7th/cmp-path",
-            "saadparwaiz1/cmp_luasnip"
-        }
+            "saadparwaiz1/cmp_luasnip",
+        },
     },
     {
-        "mhartington/formatter.nvim"
+        "mhartington/formatter.nvim",
     },
     {
-        "williamboman/mason.nvim"
+        "williamboman/mason.nvim",
     },
 
     --// Navigation
     {
-        "karb94/neoscroll.nvim"
+        "karb94/neoscroll.nvim",
     },
     {
-        "ggandor/leap.nvim"
+        "ggandor/leap.nvim",
     },
     {
-        "beauwilliams/focus.nvim"
+        "beauwilliams/focus.nvim",
     },
 
     --// Text
     {
-        "kyazdani42/nvim-web-devicons"
+        "kyazdani42/nvim-web-devicons",
     },
     {
-        "folke/todo-comments.nvim"
+        "folke/todo-comments.nvim",
     },
     {
-        "numToStr/Comment.nvim"
+        "numToStr/Comment.nvim",
     },
 
     --// Ui
     {
-        "nvim-telescope/telescope.nvim"
+        "nvim-telescope/telescope.nvim",
     },
     {
         "stevearc/dressing.nvim",
-        ["event"] = "VeryLazy"
+        ["event"] = "VeryLazy",
     },
     {
-        "nvim-neo-tree/neo-tree.nvim"
+        "nvim-neo-tree/neo-tree.nvim",
     },
     {
-        "noib3/nvim-cokeline"
+        "noib3/nvim-cokeline",
     },
     {
-        "rcarriga/nvim-notify"
+        "rcarriga/nvim-notify",
     },
     {
         "nvim-lualine/lualine.nvim",
-        ["lazy"] = false
+        ["lazy"] = false,
     },
     {
-        "lewis6991/gitsigns.nvim"
+        "lewis6991/gitsigns.nvim",
     },
     {
-        ["url"] = "https://gitlab.com/yorickpeterse/nvim-pqf"
+        ["url"] = "https://gitlab.com/yorickpeterse/nvim-pqf",
+    },
+    {
+        "goolord/alpha-nvim",
     },
 
     --// Misc
     {
         "nullishamy/autosave.nvim",
-        ["branch"] = "dev"
+        ["branch"] = "dev",
     },
     {
         "nvim-treesitter/nvim-treesitter",
@@ -118,17 +121,17 @@ Plugins["Plugins"] = {
             "nvim-treesitter/nvim-treesitter-textobjects",
             "windwp/nvim-ts-autotag",
             "windwp/nvim-autopairs",
-            "p00f/nvim-ts-rainbow"
-        }
+            "p00f/nvim-ts-rainbow",
+        },
     },
 
     --// Others
     {
-        "MunifTanjim/nui.nvim"
+        "MunifTanjim/nui.nvim",
     },
     {
-        "nvim-lua/plenary.nvim"
-    }
+        "nvim-lua/plenary.nvim",
+    },
 }
 
 return Plugins
