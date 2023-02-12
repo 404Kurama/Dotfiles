@@ -83,6 +83,9 @@ Plugins["Plugins"] = {
         "nvim-telescope/telescope.nvim",
     },
     {
+        "nvim-telescope/telescope-project.nvim",
+    },
+    {
         "stevearc/dressing.nvim",
         ["event"] = "VeryLazy",
     },
