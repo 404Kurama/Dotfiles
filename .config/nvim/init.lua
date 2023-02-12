@@ -30,3 +30,18 @@ Utils.LoadModule("plugins/configs/misc/treesitter")
 Utils.LoadModule("plugins/configs/nav/focus")
 Utils.LoadModule("plugins/configs/nav/scroll")
 Utils.LoadModule("plugins/configs/nav/leap")
+
+--// Ui
+Utils.LoadModule("plugins/configs/ui/pqf")
+Utils.LoadModule("plugins/configs/ui/dressing")
+Utils.LoadModule("plugins/configs/ui/telescope")
+Utils.LoadModule("plugins/configs/ui/git")
+Utils.LoadModule("plugins/configs/ui/notify")
+Utils.LoadModule("plugins/configs/ui/tree")
+Utils.LoadModule("plugins/configs/ui/statusline")
+Utils.LoadModule("plugins/configs/ui/bufferline")
+
+--// Text
+Utils.LoadModule("plugins/configs/text/autopairs")
+Utils.LoadModule("plugins/configs/text/icons")
+Utils.LoadModule("plugins/configs/text/comment")

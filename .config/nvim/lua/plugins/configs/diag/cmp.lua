@@ -62,7 +62,7 @@ Cmp.setup({
     ["mapping"] = {
         ["<S-TAB>"] = Cmp.mapping.select_prev_item(),
         ["<TAB>"] = Cmp.mapping.select_next_item(),
-        ["<S-ESC>"] = Cmp.mapping.close(),
+        ["<C-e>"] = Cmp.mapping.close(),
         ["<CR>"] = Cmp.mapping.confirm({
             ["behavior"] = Cmp.ConfirmBehavior.Insert,
             ["select"] = true

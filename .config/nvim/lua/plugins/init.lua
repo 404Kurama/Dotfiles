@@ -67,6 +67,45 @@ Plugins["Plugins"] = {
         "beauwilliams/focus.nvim"
     },
 
+    --// Text
+    {
+        "kyazdani42/nvim-web-devicons"
+    },
+    {
+        "folke/todo-comments.nvim"
+    },
+    {
+        "numToStr/Comment.nvim"
+    },
+
+    --// Ui
+    {
+        "nvim-telescope/telescope.nvim"
+    },
+    {
+        "stevearc/dressing.nvim",
+        ["event"] = "VeryLazy"
+    },
+    {
+        "nvim-neo-tree/neo-tree.nvim"
+    },
+    {
+        "noib3/nvim-cokeline"
+    },
+    {
+        "rcarriga/nvim-notify"
+    },
+    {
+        "nvim-lualine/lualine.nvim",
+        ["lazy"] = false
+    },
+    {
+        "lewis6991/gitsigns.nvim"
+    },
+    {
+        ["url"] = "https://gitlab.com/yorickpeterse/nvim-pqf"
+    },
+
     --// Misc
     {
         "nullishamy/autosave.nvim",
