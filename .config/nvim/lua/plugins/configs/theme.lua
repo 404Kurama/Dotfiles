@@ -19,18 +19,18 @@ Catppuccin.setup({
         ["neotree"] = {
             ["enabled"] = true,
             ["show_root"] = true,
-            ["transparent_panel"] = false
+            ["transparent_panel"] = false,
         },
         ["markdown"] = true,
-        ["notify"] = true
+        ["notify"] = true,
     },
     ["compile"] = {
         ["enabled"] = true,
-        ["path"] = vim.fn.stdpath("cache") .. "/catppuccin"
+        ["path"] = vim.fn.stdpath("cache") .. "/catppuccin",
     },
     ["custom_highlights"] = {
-        ["FloatBorder"] = { fg = Colors.pink }  
-    }
+        ["FloatBorder"] = { fg = Colors.pink },
+    },
 })
 
 vim.api.nvim_command("colorscheme catppuccin")
