@@ -1,0 +1,19 @@
+; Variables
+(deflisten workspaces "scripts/workspaces.sh")
+
+; Core
+(defwidget bar []
+	(box :class "main-box" :orientation "h" :space-evenly true :valign "center" :height 30
+
+		; Left
+		(box :orientation "h" :space-evenly false :valign "center" :spacing 10
+			(literal :content workspaces))
+	)
+)
+
+; Window
+(defwindow bar
+	:geometry (geometry :x "0" :y "0" :width "1920px")
+	:monitor 0
+	:reserve (struts :distance "25px" :side "top")
+	(bar))
