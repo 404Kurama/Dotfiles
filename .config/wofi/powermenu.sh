@@ -17,7 +17,7 @@ case $selected in
         playerctl pause
         swaylock
         ;;
-    logout)
+    log)
         loginctl terminate-user "$(whoami)"
         ;;
     shut)
