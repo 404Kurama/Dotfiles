@@ -1,5 +1,13 @@
 ; Variables
 (deflisten workspaces "scripts/workspaces.sh")
+(defpoll song :interval "2s" "scripts/music.sh")
+(defpoll volume :interval "2s" "scripts/volume.sh")
+(defpoll year :interval "10m" "date +%y")
+(defpoll month :interval "10m" "date +%b")
+(defpoll date :interval "5m" "date +%e")
+(defpoll hour :interval "5s" "date '+%I'")
+(defpoll min :interval "5s" "date '+%M'")
+(defpoll ampm :interval "5s" "date '+%p'")
 
 ; Core
 (defwidget bar []
@@ -8,6 +16,70 @@
 		; Left
 		(box :orientation "h" :space-evenly false :valign "center" :spacing 10
 			(literal :content workspaces))
+
+    ; Center
+    (box :valign "center"
+      (literal :content song))
+
+    ; Right
+		(box :orientation "h" :space-evenly false :valign "center" :halign "end" :spacing 4
+      (box :class "memory-box" :space-evenly false :spacing 3
+				(label :class "txt glyph" :text " ")
+				(label :class "txt" :limit-width 4 :show-truncated false :text "${EWW_RAM.used_mem / 1024 / 1024 / 1024}")
+				(label :class "txt unit" :text "GB"))
+      (box :class "cpu-box" :space-evenly false :spacing 3
+				(label :class "txt glyph" :text " ")
+				(label :class "txt" :limit-width 4 :show-truncated false :text "${EWW_CPU.avg}")
+				(label :class "txt unit" :text "%"))
+      (box :class "disk-box" :space-evenly false :spacing 3
+				(label :class "txt glyph" :text " ")
+				(label :class "txt" :limit-width 4 :show-truncated false :text "${round(EWW_DISK["/"].used_perc, 0)}")
+				(label :class "txt unit" :text "%"))
+      (box :class "volume-box" :space-evenly false :spacing 3
+				(label :class "txt glyph" :text "${volume.icon} ")
+				(label :class "txt" :limit-width 4 :show-truncated false :text "${volume.content}")
+				(label :class "txt unit" :text "%"))
+      (box :class "time-box" :space-evenly false :spacing 3
+        (label :class "txt glyph" :text " ")
+				(label :class "txt" :text "${date} ${month} ${year} | ${hour}:${min} ${ampm}"))
+        )
+	)
+)
+
+; Bar 2
+(defwidget bar2 []
+	(box :class "main-box" :orientation "h" :space-evenly true :valign "center" :height 30
+
+		; Left
+		(box :orientation "h" :space-evenly false :valign "center" :spacing 10
+			(literal :content workspaces))
+
+    ; Center
+    (box :valign "center"
+      (literal :content song))
+
+    ; Right
+		(box :orientation "h" :space-evenly false :valign "center" :halign "end" :spacing 4
+      (box :class "memory-box" :space-evenly false :spacing 3
+				(label :class "txt glyph" :text " ")
+				(label :class "txt" :limit-width 4 :show-truncated false :text "${EWW_RAM.used_mem / 1024 / 1024 / 1024}")
+				(label :class "txt unit" :text "GB"))
+      (box :class "cpu-box" :space-evenly false :spacing 3
+				(label :class "txt glyph" :text " ")
+				(label :class "txt" :limit-width 4 :show-truncated false :text "${EWW_CPU.avg}")
+				(label :class "txt unit" :text "%"))
+      (box :class "disk-box" :space-evenly false :spacing 3
+				(label :class "txt glyph" :text " ")
+				(label :class "txt" :limit-width 4 :show-truncated false :text "${round(EWW_DISK["/"].used_perc, 0)}")
+				(label :class "txt unit" :text "%"))
+      (box :class "volume-box" :space-evenly false :spacing 3
+				(label :class "txt glyph" :text "${volume.icon} ")
+				(label :class "txt" :limit-width 4 :show-truncated false :text "${volume.content}")
+				(label :class "txt unit" :text "%"))
+      (box :class "time-box" :space-evenly false :spacing 3
+        (label :class "txt glyph" :text " ")
+				(label :class "txt" :text "${hour}:${min} ${ampm}"))
+        )
 	)
 )
 
@@ -17,3 +89,9 @@
 	:monitor 0
 	:reserve (struts :distance "25px" :side "top")
 	(bar))
+
+(defwindow bar2
+	:geometry (geometry :x "0" :y "0" :width "1600px")
+	:monitor 1
+	:reserve (struts :distance "25px" :side "top")
+	(bar2))

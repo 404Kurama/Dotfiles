@@ -7,24 +7,30 @@
     font-family: "Hack Nerd Font";
 }
 
-.main-box {
-    margin: 3px 10px 3px 10px;
-    border-radius: 12px;
-    background-color: transparent;
-}
-
-// Workspace
-.workspace-box {
-    border-radius: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: rgba($black, 0.75);
-}
-
 .focused {
     color: $pink;
 }
 
 .empty {
     color: rgba($white, 0.5);
+}
+
+// Box
+.main-box {
+    margin: 3px 10px 3px 10px;
+    border-radius: 12px;
+    background-color: transparent;
+}
+
+.workspace-box,
+.memory-box,
+.cpu-box,
+.disk-box,
+.volume-box,
+.time-box,
+.title-box {
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba($black, 0.75);
 }
