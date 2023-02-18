@@ -8,5 +8,6 @@ Formatter.setup({
         ["typescript"] = require("formatter.filetypes.typescript").prettier,
         ["typescriptreact"] = require("formatter.filetypes.typescriptreact").prettier,
         ["javascript"] = require("formatter.filetypes.javascript").prettier,
+        ["python"] = require("formatter.filetypes.python").black
     },
 })
