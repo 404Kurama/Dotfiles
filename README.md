@@ -3,6 +3,9 @@
 
 ![Desktop Screenshot]()
 
+## Notes!
+I decide to switch back to windows, I will give windows 11 a try.
+
 ## Special Thank To
 - [Notusknot's dotfiles](https://github.com/notusknot/dotfiles-nix)
 - [Rubyowo's dotfiles](https://github.com/rubyowo/dotfiles)
